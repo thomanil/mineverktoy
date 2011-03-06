@@ -1,2 +1,2 @@
-require 'brukerdette'
+require 'mineverktoy'
 run Sinatra::Application
