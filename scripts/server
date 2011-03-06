@@ -1,0 +1,4 @@
+# Uses shotgun. Install shotgun gem first: 
+#   sudo gem install shotgun
+
+shotgun mineverktoy.rb

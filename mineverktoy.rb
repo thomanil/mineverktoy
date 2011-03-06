@@ -10,5 +10,7 @@ get '/om' do
 end
 
 get '/:name' do |name|
-  "Du har funnet intervjuet med #{name}"
+ 
+  erb :"#{name}"
+    # would instead render views/dogs/index.erb
 end
