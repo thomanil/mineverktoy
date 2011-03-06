@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "trying basics..."
+  erb :index
 end
 
 #get '/om' do
