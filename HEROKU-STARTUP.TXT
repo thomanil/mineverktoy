@@ -1,0 +1,6 @@
+
+<git init, set up on github>
+
+heroku create [optional-app-name]
+
+git push heroku master
