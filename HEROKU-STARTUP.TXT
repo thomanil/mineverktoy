@@ -4,3 +4,5 @@
 heroku create [optional-app-name]
 
 git push heroku master
+
+<setup custom domains, zerigo dns, point site5 domain to zerigo dns>
