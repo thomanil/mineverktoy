@@ -1,4 +1,4 @@
 require 'sinatra'
 get '/' do
-  "Velkommen til brukerdette.com"
+  "Velkommen til mineverktoy.com"
 end
