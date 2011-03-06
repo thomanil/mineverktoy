@@ -1,12 +1,11 @@
 require 'sinatra'
-require 'rubygems'
 
 get '/' do
-  erb :"index"
+  erb :index
 end
 
 get '/om' do
-  erb :"about"
+  erb :about
 end
 
 get '/:name' do |name|
