@@ -1,16 +1,14 @@
 require 'sinatra'
 
-
 get '/' do
-  "index page"
+  erb :"index"
 end
 
 get '/om' do
-  "about page"
+  erb :"about"
 end
 
 get '/:name' do |name|
- 
   erb :"#{name}"
     # would instead render views/dogs/index.erb
 end
