@@ -1,12 +1,6 @@
 # mineverktoy.com
 
-## DESCRIPTION:
-
 A collection of nerdy interviews.
-
-
-## TODO:
-
 
 
 ## LICENSE:
