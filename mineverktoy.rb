@@ -40,27 +40,21 @@ helpers do
   def q4_dream_setup?
     "<h2>Hva er drømmeoppsettet ditt?</h2>"
   end
-  
-  def interview_metadata name
-    interviews_config.find { |config| config[:name].eql? name }
-  end
-  
+    
   def portrait_link name
     "<img src='/images/#{name}/portrait.jpg'>"
   end
-  
+    
   def interview_header name
-    meta_data = interview_metadata name
-    published_at = meta_data[:published_at]
-    title = meta_data[:title]
-    full_name = meta_data[:full_name]
+    meta = interviews_config.find { |config| config[:name].eql? name }
+    published_at = meta[:published_at]
+    title = meta[:title]
+    full_name = meta[:full_name]
 
     header = ""
     header += "<p>#{portrait_link name}</p>"
     header += "<h2>#{full_name}</h2>"
     header += "<p>#{title} - #{published_at}</p>"
-    
-    return header
   end
   
 end
