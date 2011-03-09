@@ -14,7 +14,13 @@ helpers do
     return list
   end
   
+  def index_link
+    "<a href='/'>Intervjuene</a>"
+  end
   
+  def om_link
+    "<a href='om'>Om nettstedet</a> "
+  end
   
 
 end
