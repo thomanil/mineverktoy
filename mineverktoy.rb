@@ -6,9 +6,9 @@ helpers do
 
   def interview_list  
     list = "";
-    interviews_config().each do |name| 
+    interviews_config().each do |interview| 
       list += "<p class='summary'>"
-      list += "<a href='#{name}'>#{name}</a>"
+      list += "<a href='#{interview[:name]}'>#{interview[:name]}</a>"
       list += "</p>"
     end
     return list
@@ -19,10 +19,10 @@ helpers do
   end
   
   def om_link
-    "<a href='om'>Om nettstedet</a> "
+    "<a href='om'>Om nettstedet</a>"
   end
   
-
+  
 end
 
 
@@ -35,5 +35,9 @@ get '/om' do
 end
 
 get '/:name' do |name|
+  # find that interview from hash-array, populate page with info taken from there
+  # make parts of page generated, ie publish date etc
+  # also inject questions
+  
   erb :"interviews/#{name}"
 end
