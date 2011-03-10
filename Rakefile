@@ -1,10 +1,7 @@
 require 'rake'
 require 'rake/testtask'
 
-# Rake build tasks
-
-desc "Default task" 
-task :default => [:jslint]
+task :default => [:test]
 
 
 desc "Run unit tests."
@@ -21,12 +18,14 @@ end
 
 desc "Generates config and files for new interview"
 task :new_interview do
+  
+  # Get name, file-name etc interactively from input/params.
   # Add new hash to interviews.rb
   # Set timestamp and date to now
   # generate new interview views and touch new jpg files in images/<name>
   # output instructions
 
-  # Converting to/from timestamp
-  # timestamp = Time.now.to_i
-  # Time.at timestamp
+  #    Converting to/from timestamp
+  #    timestamp = Time.now.to_i
+  #    Time.at timestamp
 end
