@@ -67,7 +67,33 @@ get '/om' do
   erb :about
 end
 
+get '/rss.xml' do
+  builder do |xml|
+    xml.instruct! :xml, :version => '1.0'
+    xml.rss :version => "2.0" do
+      xml.channel do
+        xml.title "Mineverktoy Nyheter"
+        xml.description "Nye intervjuer fra Mineverktoy.com"
+        xml.link "http://mineverktoy.com"
+
+        interviews_config().each do |interview|
+          xml.item do
+            xml.title "Hvilke verktøy bruker "+ interview[:full_name]+"?"
+            xml.link "http://mineverktoy.com/#{interview[:name]}"
+            #xml.description post.body
+            xml.pubDate Time.at interview[:published_timestamp]
+            #xml.guid "http://liftoff.msfc.nasa.gov/posts/#{post.id}"
+          end
+        end
+      end
+    end
+  end
+end
+
+
 get '/:name' do |name|
   @interview_header = interview_header name  
   erb :"interviews/#{name}"
 end
+
+
