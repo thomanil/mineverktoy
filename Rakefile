@@ -12,7 +12,7 @@ end
 
 desc "Deploy app to Heroku"
 task :deploy do
-  puts %x{ deploy git push heroku master }
+  puts %x{ git push heroku master }
 end
 
 

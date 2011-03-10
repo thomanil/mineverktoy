@@ -3,13 +3,30 @@ require 'interviews'
 
 
 helpers do
-  q1_who_are_you? = "<h2>Hvem er du, og hva holder du på med?</h2>"
-  q2_what_hardware? = "<h2>Hva slags maskinvare bruker du?</h2>"
-  q3_what_software? = "<h2>Og hva slags programvare?</h2>"
-  q4_dream_setup? = "<h2>Hva er drømmeoppsettet ditt?</h2>"
-  index_link = "<a href='/'>Intervjuene</a>"
-  om_link = "<a href='om'>Om nettstedet</a>"
+  def q1_who_are_you?
+    "<h2>Hvem er du, og hva holder du på med?</h2>"
+  end
+  
+  def q2_what_hardware?
+    "<h2>Hva slags maskinvare bruker du?</h2>"
+  end
+  
+  def q3_what_software?
+    "<h2>Og hva slags programvare?</h2>"
+  end
+  
+  def q4_dream_setup?
+    "<h2>Hva er drømmeoppsettet ditt?</h2>"
+  end
 
+  def index_link
+    "<a href='/'>Intervjuene</a>"
+  end
+  
+  def om_link
+    "<a href='om'>Om nettstedet</a>"
+  end
+      
   def portrait_link name
     "<img src='/images/#{name}/portrait.jpg'>"
   end
