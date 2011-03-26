@@ -33,7 +33,7 @@ helpers do
   
   def interview_list  
     list = "";
-    interviews_config().each do |interview| 
+    published_interviews_config().each do |interview| 
       name = interview[:name]
       
       list += "<p class='summary'>"
@@ -76,7 +76,7 @@ get '/rss.xml' do
         xml.description "Nye intervjuer fra Mineverktoy.com"
         xml.link "http://mineverktoy.com"
 
-        interviews_config().each do |interview|
+        published_interviews_config().each do |interview|
           xml.item do
             xml.title "Hvilke verktøy bruker "+ interview[:full_name]+"?"
             xml.link "http://mineverktoy.com/#{interview[:name]}"

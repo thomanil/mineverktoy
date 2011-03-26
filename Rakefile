@@ -47,7 +47,7 @@ end
 
 def update_interview_config full_name, root_filename, title, published_timestamp, published_at
   config_file = "interviews.rb"
-  new_entry = "{:published_timestamp => #{published_timestamp}, :published_at => '#{published_at}', :name => '#{root_filename}', :full_name => '#{full_name}', :title => '#{title}'}"
+  new_entry = "{:published? => false, :published_timestamp => #{published_timestamp}, :published_at => '#{published_at}', :name => '#{root_filename}', :full_name => '#{full_name}', :title => '#{title}'}"
   updated_config_file = File.read(config_file).gsub("}]", "},\n   #{new_entry}]")
   File.open(config_file, "w") {|file| file.puts updated_config_file}
 end
