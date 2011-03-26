@@ -4,24 +4,26 @@
 	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	
-	<header>
-		<h1>
-			Mine verktøy
-		</h1>
-		
-		<p>
-			<em>Hva bruker folk for å få jobben gjort?</em>
-		</p>
-	</header>
-	
-	<%= index_link %> / <%= om_link %>
-	
-    <%= yield %>
 
-	<footer>
-		 <p>© 2011 Thomas Kjeldahl Nilsson</p>
-	</footer>
+	<div id="container">
+	  <header>
+			<h1>
+				Mine verktøy
+			</h1>
 
+			<p>
+				<em>Hva bruker folk for å få jobben gjort?</em>
+			</p>
+
+			<%= index_link %> / <%= om_link %>
+	   </header>
+	   <div id="main" role="main">
+	 			<%= yield %>
+	   </div>
+	   <footer>
+	 	<em>© 2011 Thomas Kjeldahl Nilsson</em>
+    	</footer>
+  	</div> <!--! end of #container -->
+	
   </body>
 </html>

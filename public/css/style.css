@@ -1,7 +1,17 @@
-.summary {
-	margin:40px;
-}
-
 .hidden {
 	display:none;
+}
+
+#container {
+	width: 500px;
+	margin-left: 80px;
+}
+
+header {
+	margin-top: 50px;
+}
+
+#main {
+	margin-top: 70px;
+	margin-bottom: 50px;
 }

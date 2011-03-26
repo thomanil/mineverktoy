@@ -1,8 +1,6 @@
 require 'sinatra'
 require 'interviews'
 
-
-
 get '/' do
   erb :index
 end
@@ -15,11 +13,11 @@ get '/rss.xml' do
   rss_feed
 end
 
-
 get '/:name' do |name|
   @interview_header = interview_header name  
   erb :"interviews/#{name}"
 end
+
 
 
 helpers do
@@ -47,7 +45,7 @@ helpers do
     "<a href='om'>Om nettstedet</a>"
   end
       
-  def portrait_link name
+  def portrait_img name
     "<img src='/images/#{name}/portrait.jpg'>"
   end
   
@@ -55,10 +53,11 @@ helpers do
     list = "";
     published_interviews_config().reverse.each do |interview| 
       name = interview[:name]
+      full_name = interview[:full_name]
       
       list += "<p class='summary'>"
-      list += "<img class='thumbnail' src='images/#{name}/thumbnail-bw.jpg'><img class='hidden thumbnail' src='images/#{name}/thumbnail-color.jpg'>"
-      list += "<a href='#{name}'>#{name}</a>"
+      list += "<!-- <img class='thumbnail' src='images/#{name}/thumbnail-bw.jpg'><img class='hidden thumbnail' src='images/#{name}/thumbnail-color.jpg'> -->"
+      list += "<a href='#{name}'>#{full_name}</a>"
       list += "</p>"
     end
     return list
@@ -71,9 +70,9 @@ helpers do
     full_name = meta[:full_name]
 
     header = ""
-    header += "<p>#{portrait_link name}</p>"
+    header += "<p>#{portrait_img name}</p>"
     header += "<h2>#{full_name}</h2>"
-    header += "<p>#{title} - #{published_at}</p>"
+    header += "<p>#{title}</p>"
   end
   
   def rss_feed

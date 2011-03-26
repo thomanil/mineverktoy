@@ -22,8 +22,6 @@ task :updated_timestamp do
   puts "'published_at' date string: #{published_at}"
 end
 
-
-
 desc "Generates interview skeleton: updates interview.rb config file, creates needed view and images."
 task :new_interview do
   puts "Let's create a new interview!"
