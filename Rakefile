@@ -9,11 +9,19 @@ task :test do
   puts %x{ ruby -rubygems test/tests.rb}
 end
 
-
 desc "Deploy app to Heroku"
 task :deploy do
   puts %x{ git push heroku master }
 end
+
+desc "Get current timestamp and publish-date (if needed to update interview pubdate)"
+task :updated_timestamp do
+  published_timestamp = Time.now.to_i
+  published_at = Time.at(published_timestamp).strftime("%d.%m.%Y")
+  puts "'published' timestamp: #{published_timestamp}"
+  puts "'published_at' date string: #{published_at}"
+end
+
 
 
 desc "Generates interview skeleton: updates interview.rb config file, creates needed view and images."
@@ -81,6 +89,8 @@ def create_image_files root_filename
     FileUtils.touch("public/images/#{root_filename}/thumbnail-bw.jpg")
     FileUtils.touch("public/images/#{root_filename}/thumbnail-color.jpg")
 end  
+
+
   
 
 

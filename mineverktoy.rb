@@ -2,6 +2,26 @@ require 'sinatra'
 require 'interviews'
 
 
+
+get '/' do
+  erb :index
+end
+
+get '/om' do
+  erb :about
+end
+
+get '/rss.xml' do
+  rss_feed
+end
+
+
+get '/:name' do |name|
+  @interview_header = interview_header name  
+  erb :"interviews/#{name}"
+end
+
+
 helpers do
   def q1_who_are_you?
     "<h2>Hvem er du, og hva holder du på med?</h2>"
@@ -33,7 +53,7 @@ helpers do
   
   def interview_list  
     list = "";
-    published_interviews_config().each do |interview| 
+    published_interviews_config().reverse.each do |interview| 
       name = interview[:name]
       
       list += "<p class='summary'>"
@@ -56,44 +76,28 @@ helpers do
     header += "<p>#{title} - #{published_at}</p>"
   end
   
-end
+  def rss_feed
+    builder do |xml|
+      xml.instruct! :xml, :version => '1.0'
+      xml.rss :version => "2.0" do
+        xml.channel do
+          xml.title "Mineverktoy"
+          xml.description "Nye intervjuer fra Mineverktoy.com"
+          xml.link "http://mineverktoy.com"
 
-
-get '/' do
-  erb :index
-end
-
-get '/om' do
-  erb :about
-end
-
-get '/rss.xml' do
-  builder do |xml|
-    xml.instruct! :xml, :version => '1.0'
-    xml.rss :version => "2.0" do
-      xml.channel do
-        xml.title "Mineverktoy Nyheter"
-        xml.description "Nye intervjuer fra Mineverktoy.com"
-        xml.link "http://mineverktoy.com"
-
-        published_interviews_config().each do |interview|
-          xml.item do
-            xml.title "Hvilke verktøy bruker "+ interview[:full_name]+"?"
-            xml.link "http://mineverktoy.com/#{interview[:name]}"
-            #xml.description post.body
-            xml.pubDate Time.at interview[:published_timestamp]
-            #xml.guid "http://liftoff.msfc.nasa.gov/posts/#{post.id}"
+          published_interviews_config().each do |interview|
+            xml.item do
+              xml.title "Hvilke verktøy bruker #{interview[:full_name]}?"
+              xml.link "http://mineverktoy.com/#{interview[:name]}"
+              xml.pubDate Time.at interview[:published_timestamp]
+            end
           end
         end
       end
     end
   end
+  
 end
 
-
-get '/:name' do |name|
-  @interview_header = interview_header name  
-  erb :"interviews/#{name}"
-end
 
 
