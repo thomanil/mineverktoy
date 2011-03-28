@@ -1,6 +1,6 @@
 # mineverktoy.com
 
-A collection of nerdy interviews with creative people about what 
+A collection of interviews with creative people about what 
 hardware and software they use. 
 
 Basically the Norwegian version of 
