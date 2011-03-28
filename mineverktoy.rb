@@ -22,19 +22,19 @@ end
 
 helpers do
   def q1_who_are_you?
-    "<h2>Hvem er du, og hva holder du på med?</h2>"
+    "<div class='interview-question'><h2>Hvem er du, og hva holder du på med?</h2><hr></div>"
   end
   
   def q2_what_hardware?
-    "<h2>Hva slags maskinvare bruker du?</h2>"
+    "<div class='interview-question'><h2>Hva slags maskinvare bruker du?</h2><hr></div>"
   end
   
   def q3_what_software?
-    "<h2>Og hva slags programvare?</h2>"
+    "<div class='interview-question'><h2>Og hva slags programvare?</h2><hr></div>"
   end
   
   def q4_dream_setup?
-    "<h2>Hva er drømmeoppsettet ditt?</h2>"
+    "<div class='interview-question'><h2>Hva er drømmeoppsettet ditt?</h2><hr></div>"
   end
 
   def index_link
@@ -55,11 +55,13 @@ helpers do
       name = interview[:name]
       full_name = interview[:full_name]
       published_at = interview[:published_at]
+      title = interview[:title]
       
       list += "<ul>"
       list += "  <li class='interview-summary'>"
       list += "     <!-- <img class='thumbnail' src='images/#{name}/thumbnail-bw.jpg'><img class='hidden thumbnail' src='images/#{name}/thumbnail-color.jpg'> -->"
-      list += "     <a href='#{name}'>#{full_name}</a>"
+      list += "     <a class= 'interviewee-name'href='#{name}'>#{full_name}</a> <br>"
+      list += "     <span class='interviewee-title'>#{title}</span>"
       list += "     <span class='right-aligned interview-pubdate'>#{published_at}</span>"
       list += "     <hr/>"
       list += "  </li>"
@@ -75,10 +77,14 @@ helpers do
     title = meta[:title]
     full_name = meta[:full_name]
 
-    header = ""
-    header += "<p>#{portrait_img name}</p>"
-    header += "<h2>#{full_name}</h2>"
-    header += "<p>#{title}</p>"
+    header = "<div class='interview-header'>"
+    header += "   #{portrait_img name}"
+    header += "   <h2>#{full_name}</h2>"
+    header += "   <span>#{title}</span>"
+    header += "   <span class='right-aligned interview-pubdate'>#{published_at}</span>"
+    header += "</div>"
+
+    
   end
   
   def rss_feed

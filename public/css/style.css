@@ -6,6 +6,10 @@
 	float: right;
 }
 
+hr {
+	color: gray;
+}
+
 #container {
 	font-family: Arial, "MS Trebuchet", sans-serif;
 	width: 500px;
@@ -33,6 +37,24 @@ footer {
 
 .interview-pubdate {
 	color: gray;
+}
+
+.interviewee-title {
+	font-size: 0.8em;
+}
+
+.interviewee-name {
+	font-size: 1.2em;
+}
+
+.interview-header {
+	margin-bottom: 50px;
+}
+
+.interview-question {
+	color: gray;
+	margin-top: 40px;
+	font-size: 0.9em;
 }
 
 a {
