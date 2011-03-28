@@ -80,8 +80,8 @@ helpers do
       xml.instruct! :xml, :version => '1.0'
       xml.rss :version => "2.0" do
         xml.channel do
-          xml.title "Mineverktoy"
-          xml.description "Nye intervjuer fra Mineverktoy.com"
+          xml.title "Mine Verktøy"
+          xml.description "Nye intervjuer fra mineverktoy.com"
           xml.link "http://mineverktoy.com"
 
           published_interviews_config().each do |interview|
