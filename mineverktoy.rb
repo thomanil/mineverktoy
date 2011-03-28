@@ -80,7 +80,7 @@ helpers do
     header = "<div class='interview-header'>"
     header += "   #{portrait_img name}"
     header += "   <h2>#{full_name}</h2>"
-    header += "   <span>#{title}</span>"
+    header += "   <span><strong>#{title}</strong></span>"
     header += "   <span class='right-aligned interview-pubdate'>#{published_at}</span>"
     header += "</div>"
 

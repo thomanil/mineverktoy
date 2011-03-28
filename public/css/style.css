@@ -65,6 +65,10 @@ a:visited {
 	color: #00B515;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 
 ol, ul {
 	list-style: none;
