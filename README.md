@@ -4,7 +4,7 @@ A collection of interviews with creative people about what
 hardware and software they use. 
 
 Basically the Norwegian version of 
-[The Setup](http://usesthis.com).
+[The Setup](http://usesthis.com), made with the blessing of [Waferbaby](http://github.com/waferbaby)
 
 
 ## LICENSE:

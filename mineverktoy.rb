@@ -54,11 +54,17 @@ helpers do
     published_interviews_config().reverse.each do |interview| 
       name = interview[:name]
       full_name = interview[:full_name]
+      published_at = interview[:published_at]
       
-      list += "<p class='summary'>"
-      list += "<!-- <img class='thumbnail' src='images/#{name}/thumbnail-bw.jpg'><img class='hidden thumbnail' src='images/#{name}/thumbnail-color.jpg'> -->"
-      list += "<a href='#{name}'>#{full_name}</a>"
-      list += "</p>"
+      list += "<ul>"
+      list += "  <li class='interview-summary'>"
+      list += "     <!-- <img class='thumbnail' src='images/#{name}/thumbnail-bw.jpg'><img class='hidden thumbnail' src='images/#{name}/thumbnail-color.jpg'> -->"
+      list += "     <a href='#{name}'>#{full_name}</a>"
+      list += "     <span class='right-aligned interview-pubdate'>#{published_at}</span>"
+      list += "     <hr/>"
+      list += "  </li>"
+      list += "</ul>"
+      
     end
     return list
   end

@@ -32,7 +32,7 @@ task :new_interview do
   puts "What is the title of the person? (Example: 'Programmer at Acme Solutions')"
   title = STDIN.gets.gsub("\n","")
   published_timestamp = Time.now.to_i
-  published_at = Time.at(published_timestamp).strftime("%d.%m.%Y")
+  published_at = Time.at(published_timestamp).strftime("%d.%m %Y")
   
   puts "Full name: "+full_name
   puts "Title: "+title

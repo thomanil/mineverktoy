@@ -2,6 +2,10 @@
 	display:none;
 }
 
+.right-aligned {
+	float: right;
+}
+
 #container {
 	font-family: Arial, "MS Trebuchet", sans-serif;
 	width: 500px;
@@ -18,13 +22,36 @@ header {
 }
 
 footer {
+	margin-top: 60px;
+	font-size: 0.8em;
+	color: gray;
+}
+
+.interview-summary {
+	margin-top: 50px;
+}
+
+.interview-pubdate {
 	color: gray;
 }
 
 a {
-	color: 00610B;
+	color: #00610B;
 }
 
 a:visited {
-	color: 00B515;
+	color: #00B515;
 }
+
+
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
