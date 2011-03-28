@@ -3,6 +3,7 @@
 }
 
 #container {
+	font-family: Arial, "MS Trebuchet", sans-serif;
 	width: 500px;
 	margin-left: 80px;
 }
@@ -14,4 +15,8 @@ header {
 #main {
 	margin-top: 70px;
 	margin-bottom: 50px;
+}
+
+footer {
+	color: gray;
 }
