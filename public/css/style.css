@@ -20,3 +20,11 @@ header {
 footer {
 	color: gray;
 }
+
+a {
+	color: 00610B;
+}
+
+a:visited {
+	color: 00B515;
+}
