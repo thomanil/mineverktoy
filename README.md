@@ -1,6 +1,9 @@
 # mineverktoy.com
 
-A collection of nerdy interviews with creative people about what hardware and software they use. Basically the Norwegian version of 
+A collection of nerdy interviews with creative people about what 
+hardware and software they use. 
+
+Basically the Norwegian version of 
 [The Setup](http://usesthis.com).
 
 
