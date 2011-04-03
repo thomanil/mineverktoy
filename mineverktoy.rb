@@ -14,7 +14,7 @@ get '/rss.xml' do
 end
 
 get '/:name' do |name|
-  @interview_header = interview_header name  
+  @name = name
   erb :"interviews/#{name}"
 end
 
@@ -45,8 +45,13 @@ helpers do
     "<a href='om'>Om nettstedet</a>"
   end
       
-  def portrait_img name
-    "<img src='/images/#{name}/portrait.jpg'>"
+  def portrait_html name, photo_attribution
+    html = ""
+    html += "<img src='/images/#{name}/portrait.jpg'>"
+    if photo_attribution
+      html += "<span class='right-aligned photo-attribution'>#{photo_attribution}</span>"  
+    end
+    return html
   end
   
   def interview_list  
@@ -71,20 +76,19 @@ helpers do
     return list
   end
     
-  def interview_header name
+  def interview_header name, photo_attribution
     meta = interviews_config.find { |config| config[:name].eql? name }
     published_at = meta[:published_at]
     title = meta[:title]
     full_name = meta[:full_name]
+    portrait = portrait_html name, photo_attribution
 
     header = "<div class='interview-header'>"
-    header += "   #{portrait_img name}"
+    header += "   #{portrait}"
     header += "   <h2>#{full_name}</h2>"
     header += "   <span>#{title}</span>"
     header += "   <span class='right-aligned interview-pubdate'>#{published_at}</span>"
     header += "</div>"
-
-    
   end
   
   def rss_feed
