@@ -85,7 +85,7 @@ helpers do
 
     header = "<div class='interview-header'>"
     header += "   #{portrait}"
-    header += "   <h2>#{full_name}</h2>"
+    header += "   <h1>#{full_name}</h1>"
     header += "   <span>#{title}</span>"
     header += "   <span class='right-aligned interview-pubdate'>#{published_at}</span>"
     header += "</div>"
