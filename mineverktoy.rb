@@ -1,5 +1,6 @@
+# encoding: UTF-8
 require 'sinatra'
-require 'interviews'
+require './interviews'
 
 get '/' do
   erb :index
