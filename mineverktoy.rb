@@ -104,8 +104,7 @@ helpers do
             xml.item do
               xml.title "Hvilke verktøy bruker #{interview[:full_name]}?"
               xml.link "http://mineverktoy.com/#{interview[:name]}"
-              xml.body "Denne uka forteller #{interview[:full_name]} om sine verktøy!"
-              xml.pubDate Time.at interview[:published_timestamp]
+              xml.pubDate Time.at(interview[:published_timestamp]).strftime("%a, %d %b %k:%M:%S %z")          
             end
           end
         end
