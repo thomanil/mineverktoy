@@ -62,7 +62,7 @@ end
 def create_interview_file root_filename
     interview_erb_template = <<TEMPLATE
 
-<%= @interview_header %>
+<%= interview_header @name, "" %>
 
 <%= q1_who_are_you? %>
 
