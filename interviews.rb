@@ -9,5 +9,5 @@ def interviews_config
    {:published? => true, :published_timestamp => 1303113899, :published_at => '18.04.2011', :name => 'christian-johansen', :full_name => 'Christian Johansen', :title => 'Programmerer hos Gitorious'},
    {:published? => true, :published_timestamp => 1303715766, :published_at => '25.04.2011', :name => 'ole-morten-amundsen', :full_name => 'Ole Morten Amundsen', :title => 'Entreprenør og programmerer'},
    {:published? => true, :published_timestamp => 1304311858, :published_at => '02.05.2011', :name => 'johannes-brodwall', :full_name => 'Johannes Brodwall', :title => 'Chief Scientist hos Steria'},
-   {:published? => false, :published_timestamp => 1304885895, :published_at => '08.05 2011', :name => 'espen-antonsen', :full_name => 'Espen Antonsen', :title => 'Utvikler'}]
+   {:published? => true, :published_timestamp => 1304921718, :published_at => '09.05 2011', :name => 'espen-antonsen', :full_name => 'Espen Antonsen', :title => 'Utvikler'}]
 end
