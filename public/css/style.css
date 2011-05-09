@@ -86,4 +86,6 @@ ol, ul {
 	vertical-align: baseline;
 }
 
-
+p {
+	line-height: 1.5;
+}
