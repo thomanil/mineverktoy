@@ -102,10 +102,11 @@ helpers do
          
           published_interviews_config().each do |interview|
             xml.item do
-              xml.title "Hvilke verktøy bruker #{interview[:full_name]}?"
+              xml.title "#{interview[:full_name]}"
               xml.link "http://mineverktoy.com/#{interview[:name]}"
+              xml.description "Les om hvilke verktøy #{interview[:full_name]} bruker for å få ting gjort"
               xml.pubDate Time.at(interview[:published_timestamp]).strftime("%a, %d %b %Y %H:%M:%S %Z")          
-           
+              xml.guid "#{interview[:published_timestamp]}"
             end
           end
         end
