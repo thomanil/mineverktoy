@@ -12,5 +12,8 @@ def interviews_config
    {:published? => true, :published_timestamp => 1304921718, :published_at => '09.05 2011', :name => 'espen-antonsen', :full_name => 'Espen Antonsen', :title => 'Utvikler'},
    {:published? => true, :published_timestamp => 1305529393, :published_at => '16.05 2011', :name => 'thomas-flemming', :full_name => 'Thomas Flemming', :title => 'Programmerer'},
    {:published? => true, :published_timestamp => 1306147243, :published_at => '23.05.2011', :name => 'trygve-lie', :full_name => 'Trygve Lie', :title => 'Framside-utvikler hos A-pressen Digitale Medier'},
-   {:published? => true, :published_timestamp => 1306740066, :published_at => '30.05.2011', :name => 'torbjorn-maro', :full_name => 'Torbjørn Marø', :title => 'Senior utvikler og teamleder hos PSWinCom'}]
+   {:published? => true, :published_timestamp => 1306740066, :published_at => '30.05.2011', :name => 'torbjorn-maro', :full_name => 'Torbjørn Marø', :title => 'Senior utvikler og teamleder hos PSWinCom'},
+   {:published? => false, :published_timestamp => 1307292827, :published_at => 'Ikke publisert', :name => 'sigrun-luras', :full_name => 'Sigrun Lurås', :title => 'Interaksjonsdesigner hos Det Norske Veritas'},
+   {:published? => false, :published_timestamp => 1307292942, :published_at => 'Ikke publisert', :name => 'rune-hafskjer', :full_name => 'Rune Hafskjær', :title => 'Programsjef i P5 og utviklingssjef i P4'},
+   {:published? => false, :published_timestamp => 1307293009, :published_at => 'Ikke publisert', :name => 'jan-olav-eide', :full_name => 'Jan-Olav Eide', :title => 'Systemutvikler og systemarkitekt hos OpenAdExchange'}]
 end
