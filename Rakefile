@@ -84,8 +84,6 @@ end
 def create_image_files root_filename
     FileUtils.mkdir("public/images/#{root_filename}")
     FileUtils.touch("public/images/#{root_filename}/portrait.jpg")
-    FileUtils.touch("public/images/#{root_filename}/thumbnail-bw.jpg")
-    FileUtils.touch("public/images/#{root_filename}/thumbnail-color.jpg")
 end  
 
 
