@@ -22,19 +22,19 @@ end
 
 helpers do
   def q1_who_are_you?
-    "<div class='interview-question'><h2>Hvem er du, og hva holder du på med?</h2><hr></div>"
+    "<div class='interview-question'><h3>Hvem er du, og hva holder du på med?</h3><hr></div>"
   end
   
   def q2_what_hardware?
-    "<div class='interview-question'><h2>Hva slags maskinvare bruker du?</h2><hr></div>"
+    "<div class='interview-question'><h3>Hva slags maskinvare bruker du?</h3><hr></div>"
   end
   
   def q3_what_software?
-    "<div class='interview-question'><h2>Og hva slags programvare?</h2><hr></div>"
+    "<div class='interview-question'><h3>Og hva slags programvare?</h3><hr></div>"
   end
   
   def q4_dream_setup?
-    "<div class='interview-question'><h2>Hva er drømmeoppsettet ditt?</h2><hr></div>"
+    "<div class='interview-question'><h3>Hva er drømmeoppsettet ditt?</h3><hr></div>"
   end
 
   def index_link
@@ -47,7 +47,7 @@ helpers do
       
   def portrait_html name, photo_attribution
     html = ""
-    html += "<img src='/images/#{name}/portrait.jpg'>"
+    html += "<img class='portrait' src='/images/#{name}/portrait.jpg'>"
     if photo_attribution
       html += "<span class='right-aligned photo-attribution'>#{photo_attribution}</span>"  
     end
@@ -56,23 +56,34 @@ helpers do
   
   def interview_list  
     list = "";
-    published_interviews_config().reverse.each do |interview| 
+    list += "<ul class='interview-list'>"
+    published_interviews_config().reverse.each_with_index do |interview, i| 
       name = interview[:name]
       full_name = interview[:full_name]
       published_at = interview[:published_at]
-      title = interview[:title]
+      title = interview[:title]  
       
-      list += "<ul>"
       list += "  <li class='interview-summary'>"
-      list += "     <!-- <img class='thumbnail' src='images/#{name}/thumbnail-bw.jpg'><img class='hidden thumbnail' src='images/#{name}/thumbnail-color.jpg'> -->"
+      
+      if i == 0
+        list += "     <a class= 'interviewee-name'href='#{name}'><img class='portrait' src='images/#{name}/portrait.jpg'/></a>"   
+      end
+      
       list += "     <a class= 'interviewee-name'href='#{name}'>#{full_name}</a> <br>"
       list += "     <span class='interviewee-title'>#{title}</span>"
-      list += "     <span class='right-aligned interview-pubdate'>#{published_at}</span>"
+      
+      if i == 0
+        published_field = "Denne uken"
+      else
+        published_field = "#{published_at}"
+      end
+      
+      list += "     <span class='interview-pubdate'>#{published_field}</span>"
       list += "     <hr/>"
       list += "  </li>"
-      list += "</ul>"
       
     end
+    list += "</ul>"
     return list
   end
     
@@ -85,7 +96,7 @@ helpers do
 
     header = "<div class='interview-header'>"
     header += "   #{portrait}"
-    header += "   <h1>#{full_name}</h1>"
+    header += "   <h2>#{full_name}</h2>"
     header += "   <span>#{title}</span>"
     header += "   <span class='right-aligned interview-pubdate'>#{published_at}</span>"
     header += "</div>"

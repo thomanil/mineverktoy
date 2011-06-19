@@ -3,11 +3,8 @@
 }
 
 .right-aligned {
-	float: right;
-}
-
-hr {
-	color: gray;
+	text-align: right;
+	clear: both;
 }
 
 #container {
@@ -17,27 +14,36 @@ hr {
 	margin-bottom: 30px;
 }
 
-header {
-	margin-top: 50px;
+h1 {
+	font-size: 400%;
+	margin: 0px;
+	clear: both;
 }
 
-#main {
-	margin-top: 70px;
+#title {
+	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
+h1, h2, h3, hr, footer, .slogan, .interview-pubdate, .interview-question, .photo-attribution, .nav-separator {
+	color: #A1A1A1;
+}
+
+header {
+	margin-bottom: 10px;
+}
+
 footer {
-	margin-top: 60px;
+	margin-top: 90px;
 	font-size: 0.8em;
-	color: gray;
+}
+
+.slogan {
+	margin-bottom: 10px;
 }
 
 .interview-summary {
-	margin-top: 50px;
-}
-
-.interview-pubdate {
-	color: gray;
+	margin-bottom: 50px;
 }
 
 .interviewee-title {
@@ -48,18 +54,25 @@ footer {
 	font-size: 1.2em;
 }
 
+.interview-pubdate {
+	float: right;
+}
+
 .interview-header {
 	margin-bottom: 50px;
 }
 
 .interview-question {
-	color: gray;
 	margin-top: 40px;
 	font-size: 0.9em;
 }
 
+.portrait {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .photo-attribution {
-	color: gray;
 	font-size: 0.8em;
 }
 
@@ -84,6 +97,7 @@ ol, ul {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	clear:both;
 }
 
 p {

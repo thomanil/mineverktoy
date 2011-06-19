@@ -16,15 +16,18 @@
 
 	<div id="container">
 	  <header>
-			<h1>
-				Mine Verktøy
-			</h1>
 
-			<p>
-				<em>Hva bruker folk for å få jobben gjort?</em>
-			</p>
+			<div id="title">
+				<h1 class="right-aligned">Mine Verktøy</h1>
+				<section class="right-aligned slogan">
+					Hva bruker folk for å få jobben gjort?
+				</section>
+			</div>
 
-			<strong><%= index_link %> / <%= om_link %></strong>
+			<section class="right-aligned nav">
+				<%= index_link %> <span class="nav-separator">|</span> <%= om_link %>
+			</section>
+			
 	   </header>
 	   <div id="main" role="main">
 	 			<%= yield %>
