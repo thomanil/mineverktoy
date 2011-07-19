@@ -16,5 +16,8 @@ def interviews_config
    {:published? => true, :published_timestamp => 1307340676, :published_at => '06.06.2011', :name => 'rune-hafskjer', :full_name => 'Rune Hafskjær', :title => 'Programsjef i P5 og utviklingssjef i P4'},
    {:published? => true, :published_timestamp => 1307954576, :published_at => '13.06.2011', :name => 'sigrun-luras', :full_name => 'Sigrun Lurås', :title => 'Interaksjonsdesigner/human factors-spesialist hos DNV'},
    {:published? => true, :published_timestamp => 1308551691, :published_at => '20.06.2011', :name => 'jan-olav-eide', :full_name => 'Jan-Olav Eide', :title => 'Systemutvikler og systemarkitekt hos OpenAdExchange'},
-   {:published? => true, :published_timestamp => 1309158753, :published_at => '27.06 2011', :name => 'anders-austad', :full_name => 'Anders Austad', :title => 'Konsulent hos Bouvet'}]
+   {:published? => true, :published_timestamp => 1309158753, :published_at => '27.06 2011', :name => 'anders-austad', :full_name => 'Anders Austad', :title => 'Konsulent hos Bouvet'},
+   {:published? => false, :published_timestamp => 1311073211, :published_at => '19.07 2011', :name => 'karianne-berg', :full_name => 'Karianne Berg', :title => 'Utvikler og konsulent hos Miles'},
+   {:published? => false, :published_timestamp => 1311073275, :published_at => '19.07 2011', :name => 'sarah-brodwall', :full_name => 'Sarah Brodwall', :title => 'Webdesigner'},
+   {:published? => false, :published_timestamp => 1311073349, :published_at => '19.07 2011', :name => 'rolf-rander-ness', :full_name => 'Rolf Rander Næss', :title => 'Rådgiver hos Acando'}]
 end
