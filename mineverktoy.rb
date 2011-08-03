@@ -38,11 +38,11 @@ helpers do
   end
 
   def navbar
-    index_link = ""
     if request.path_info != "/"
-      index_link = "<a href='/'>Intervjuene</a> <span class='nav-separator'>|</span> "
+      "<a href='/'>Intervjuene</a>"
+    else
+      "<a href='om'>Om nettstedet</a>"
     end
-    "#{index_link}<a href='om'>Om nettstedet</a>"
   end
       
   def portrait_html name, photo_attribution
