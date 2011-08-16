@@ -21,5 +21,6 @@ def interviews_config
    {:published? => true, :published_timestamp => 1313382367, :published_at => '15.08.2011', :name => 'rolf-rander-ness', :full_name => 'Rolf Rander Næss', :title => 'Rådgiver hos Acando'},
    {:published? => false, :published_timestamp => 1311073211, :published_at => '19.07 2011', :name => 'karianne-berg', :full_name => 'Karianne Berg', :title => 'Utvikler og konsulent hos Miles'},
    {:published? => false, :published_timestamp => 1313428271, :published_at => '15.08 2011', :name => 'mia-holte', :full_name => 'Mia Holte', :title => 'Frilans webdesigner'},
-   {:published? => false, :published_timestamp => 1313428333, :published_at => '15.08 2011', :name => 'jon-bing', :full_name => 'Jon Bing', :title => 'Professor hos det juridiske fakultet ved UiO'}]
+   {:published? => false, :published_timestamp => 1313428333, :published_at => '15.08 2011', :name => 'jon-bing', :full_name => 'Jon Bing', :title => 'Professor hos det juridiske fakultet ved UiO'},
+   {:published? => false, :published_timestamp => 1313504607, :published_at => '16.08 2011', :name => 'odin-hole-standal', :full_name => 'Odin Hole Standal', :title => 'Konsulent hos Webstep'}]
 end
