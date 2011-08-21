@@ -3,7 +3,8 @@ def published_interviews_config
 end
 
 def interviews_config
-  [{:published? => true, :published_timestamp => 1301334838, :published_at => '28.03.2011', :name => 'andre-eide', :full_name => 'André Eide', :title => 'Selvstendig næringsdrivende og fotograf'},
+  [
+   {:published? => true, :published_timestamp => 1301334838, :published_at => '28.03.2011', :name => 'andre-eide', :full_name => 'André Eide', :title => 'Selvstendig næringsdrivende og fotograf'},
    {:published? => true, :published_timestamp => 1301855769, :published_at => '04.04 2011', :name => 'eli-toftoy-andersen', :full_name => 'Eli Toftøy-Andersen', :title => 'Brukervennlighetsrådgiver hos Steria'},    
    {:published? => true, :published_timestamp => 1302502524, :published_at => '11.04.2011', :name => 'espen-dallokken', :full_name => 'Espen Dalløkken', :title => 'Framsiearkitekt hos FINN.no'},
    {:published? => true, :published_timestamp => 1303113899, :published_at => '18.04.2011', :name => 'christian-johansen', :full_name => 'Christian Johansen', :title => 'Programmerer hos Gitorious'},
@@ -19,9 +20,10 @@ def interviews_config
    {:published? => true, :published_timestamp => 1309158753, :published_at => '27.06 2011', :name => 'anders-austad', :full_name => 'Anders Austad', :title => 'Konsulent hos Bouvet'},
    {:published? => true, :published_timestamp => 1311073275, :published_at => '08.08 2011', :name => 'sarah-brodwall', :full_name => 'Sarah Brodwall', :title => 'Webdesigner'},
    {:published? => true, :published_timestamp => 1313382367, :published_at => '15.08.2011', :name => 'rolf-rander-ness', :full_name => 'Rolf Rander Næss', :title => 'Rådgiver hos Acando'},
+   {:published? => false, :published_timestamp => 1313910886, :published_at => '22.08 2011', :name => 'espen-andersen', :full_name => 'Espen Andersen', :title => 'Foreleser, forsker og skribent'},
    {:published? => false, :published_timestamp => 1311073211, :published_at => '19.07 2011', :name => 'karianne-berg', :full_name => 'Karianne Berg', :title => 'Utvikler og konsulent hos Miles'},
    {:published? => false, :published_timestamp => 1313428271, :published_at => '15.08 2011', :name => 'mia-holte', :full_name => 'Mia Holte', :title => 'Frilans webdesigner'},
    {:published? => false, :published_timestamp => 1313428333, :published_at => '15.08 2011', :name => 'jon-bing', :full_name => 'Jon Bing', :title => 'Professor hos det juridiske fakultet ved UiO'},
-   {:published? => false, :published_timestamp => 1313504607, :published_at => '16.08 2011', :name => 'odin-hole-standal', :full_name => 'Odin Hole Standal', :title => 'Konsulent hos Webstep'},
-   {:published? => false, :published_timestamp => 1313910886, :published_at => '21.08 2011', :name => 'espen-andersen', :full_name => 'Espen Andersen', :title => 'Foreleser, forsker og skribent'}]
+   {:published? => false, :published_timestamp => 1313504607, :published_at => '16.08 2011', :name => 'odin-hole-standal', :full_name => 'Odin Hole Standal', :title => 'Konsulent hos Webstep'}
+  ]
 end
