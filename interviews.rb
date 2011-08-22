@@ -20,7 +20,7 @@ def interviews_config
    {:published? => true, :published_timestamp => 1309158753, :published_at => '27.06 2011', :name => 'anders-austad', :full_name => 'Anders Austad', :title => 'Konsulent hos Bouvet'},
    {:published? => true, :published_timestamp => 1311073275, :published_at => '08.08 2011', :name => 'sarah-brodwall', :full_name => 'Sarah Brodwall', :title => 'Webdesigner'},
    {:published? => true, :published_timestamp => 1313382367, :published_at => '15.08.2011', :name => 'rolf-rander-ness', :full_name => 'Rolf Rander Næss', :title => 'Rådgiver hos Acando'},
-   {:published? => false, :published_timestamp => 1313910886, :published_at => '22.08 2011', :name => 'espen-andersen', :full_name => 'Espen Andersen', :title => 'Foreleser, forsker og skribent'},
+   {:published? => true, :published_timestamp => 1313987104, :published_at => '22.08 2011', :name => 'espen-andersen', :full_name => 'Espen Andersen', :title => 'Foreleser, forsker og skribent'},
    {:published? => false, :published_timestamp => 1311073211, :published_at => '19.07 2011', :name => 'karianne-berg', :full_name => 'Karianne Berg', :title => 'Utvikler og konsulent hos Miles'},
    {:published? => false, :published_timestamp => 1313428271, :published_at => '15.08 2011', :name => 'mia-holte', :full_name => 'Mia Holte', :title => 'Frilans webdesigner'},
    {:published? => false, :published_timestamp => 1313428333, :published_at => '15.08 2011', :name => 'jon-bing', :full_name => 'Jon Bing', :title => 'Professor hos det juridiske fakultet ved UiO'},
