@@ -25,6 +25,7 @@ def interviews_config
    {:published? => true, :published_timestamp => 1314591941, :published_at => '29.07.2011', :name => 'karianne-berg', :full_name => 'Karianne Berg', :title => 'Utvikler og konsulent hos Miles'},
    {:published? => true, :published_timestamp => 1315196668, :published_at => '05.09.2011', :name => 'mia-holte', :full_name => 'Mia Holte', :title => 'Frilans webdesigner'},
    {:published? => true, :published_timestamp => 1315801609, :published_at => '12.09 2011', :name => 'morten-tollefsen', :full_name => 'Morten Tollefsen', :title => 'Forskningsleder i MediaLT'},
+   {:published? => true, :published_timestamp => 1316452191, :published_at => '19.09.2011', :name => 'odin-hole-standal', :full_name => 'Odin Hole Standal', :title => 'Konsulent hos Webstep'},
    {:published? => false, :published_timestamp => 1313428333, :published_at => '15.08.2011', :name => 'jon-bing', :full_name => 'Jon Bing', :title => 'Professor hos det juridiske fakultet ved UiO'},
    {:published? => false, :published_timestamp => 1313504607, :published_at => '16.08.2011', :name => 'paul-chaffey', :full_name => 'Paul Chaffey', :title => 'Adm dir i Abelia'},
    {:published? => false, :published_timestamp => 1313504607, :published_at => '16.08.2011', :name => 'joachim-froholt', :full_name => 'Joachim Froholt', :title => 'Skribent hos Gamer.no'}]
