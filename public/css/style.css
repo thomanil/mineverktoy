@@ -100,6 +100,12 @@ ol, ul {
 	clear:both;
 }
 
+.bulleted {
+    list-style: square;
+    margin-left: 50px;
+} 
+
+
 p {
 	line-height: 1.5;
 }
