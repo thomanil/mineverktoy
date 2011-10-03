@@ -27,7 +27,7 @@ def interviews_config
    {:published? => true, :published_timestamp => 1315801609, :published_at => '12.09 2011', :name => 'morten-tollefsen', :full_name => 'Morten Tollefsen', :title => 'Forskningsleder i MediaLT'},
    {:published? => true, :published_timestamp => 1316452191, :published_at => '19.09.2011', :name => 'odin-hole-standal', :full_name => 'Odin Hole Standal', :title => 'Konsulent hos Webstep'},
    {:published? => true, :published_timestamp => 1317057945, :published_at => '26.09.2011', :name => 'jon-bing', :full_name => 'Jon Bing', :title => 'Professor hos det juridiske fakultet ved UiO'},
+   {:published? => true, :published_timestamp => 1317661398, :published_at => '03.10 2011', :name => 'magnar-sveen', :full_name => 'Magnar Sveen', :title => 'Glad framsieutvikler hos Kodemaker'},
    {:published? => false, :published_timestamp => 1313504607, :published_at => '16.08.2011', :name => 'paul-chaffey', :full_name => 'Paul Chaffey', :title => 'Adm dir i Abelia'},
-   {:published? => false, :published_timestamp => 1313504607, :published_at => '16.08.2011', :name => 'joachim-froholt', :full_name => 'Joachim Froholt', :title => 'Skribent hos Gamer.no'},
-   {:published? => false, :published_timestamp => 1316453013, :published_at => '19.09 2011', :name => 'magnar-sveen', :full_name => 'Magnar Sveen', :title => 'Glad framsieutvikler hos Kodemaker'}]
+   {:published? => false, :published_timestamp => 1313504607, :published_at => '16.08.2011', :name => 'joachim-froholt', :full_name => 'Joachim Froholt', :title => 'Skribent hos Gamer.no'}]
 end
