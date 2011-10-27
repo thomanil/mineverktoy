@@ -31,5 +31,6 @@ def interviews_config
    {:published? => true, :published_timestamp => 1318228398, :published_at => '10.10.2011', :name => 'paul-chaffey', :full_name => 'Paul Chaffey', :title => 'Adm. dir. i Abelia'},
    {:published? => true, :published_timestamp => 1318921459, :published_at => '17.10 2011', :name => 'elisabeth-irgens', :full_name => 'Elisabeth Irgens', :title => 'Webdesigner og grafisk designer'},
    {:published? => true, :published_timestamp => 1319547717, :published_at => '25.10.2011', :name => 'joachim-froholt', :full_name => 'Joachim Froholt', :title => 'Skribent hos Gamer.no'},
-   {:published? => false, :published_timestamp => 1318523073, :published_at => '13.10 2011', :name => 'rikke-fjeld-jansen', :full_name => 'Rikke Fjeld Jansen', :title => 'Webdesigner og illustratør'}]
+   {:published? => false, :published_timestamp => 1318523073, :published_at => '13.10 2011', :name => 'rikke-fjeld-jansen', :full_name => 'Rikke Fjeld Jansen', :title => 'Webdesigner og illustratør'},
+   {:published? => false, :published_timestamp => 1319731922, :published_at => '27.10 2011', :name => 'ole-christian-storesund', :full_name => 'Ole Christian Storesund', :title => 'Grafisk designer'}]
 end

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'sinatra'
 require 'interviews'
 
@@ -38,11 +39,7 @@ helpers do
   end
 
   def navbar
-    if request.path_info != "/"
-      "<a href='/'>Intervjuene</a>"
-    else
-      "<a href='om'>Om nettstedet</a>"
-    end
+    "<a href='/'>Intervjuene</a> <span class='nav-separator'>|</span> <a href='om'>Om nettstedet</a>"
   end
       
   def portrait_html name, photo_attribution

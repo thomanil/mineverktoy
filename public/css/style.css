@@ -33,6 +33,14 @@ header {
 	margin-bottom: 30px;
 }
 
+#logo-first-part {
+    font-family: 'Pacifico', cursive;
+}
+
+#logo-second-part {
+    font-family: 'Jockey One', sans-serif;
+}
+
 footer {
 	margin-top: 90px;
 	font-size: 0.8em;
@@ -80,7 +88,7 @@ a {
 	color: #00610B;
 }
 
-a:visited {
+a:visited, #logo-first-part {
 	color: #00B515;
 }
 
