@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 def published_interviews_config
   interviews_config.select { |interview| interview[:published?] }
 end
