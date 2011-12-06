@@ -37,5 +37,6 @@ def interviews_config
    {:published? => true, :published_timestamp => 1321271287, :published_at => '14.11 2011', :name => 'mats-lindh', :full_name => 'Mats Lindh', :title => 'Utvikler, innvikler og hacker'},
    {:published? => true, :published_timestamp => 1322477426, :published_at => '28.11 2011', :name => 'rune-spaans', :full_name => 'Rune Spaans', :title => 'Uavhengig illustratør og regissør'},
    {:published? => true, :published_timestamp => 1323117735, :published_at => '05.12 2011', :name => 'ram-yoga', :full_name => 'Ram Yoga', :title => 'Interaksjonsdesigner og brukervennlighetsrådgiver'},
-   {:published? => false, :published_timestamp => 1321296887, :published_at => '14.11 2011', :name => 'sondre-bjellas', :full_name => 'Sondre Bjellås', :title => 'Senior løsningsarkitekt hos Deepmind AS'}]
+   {:published? => false, :published_timestamp => 1321296887, :published_at => '14.11 2011', :name => 'sondre-bjellas', :full_name => 'Sondre Bjellås', :title => 'Senior løsningsarkitekt hos Deepmind AS'},
+   {:published? => false, :published_timestamp => 1323187584, :published_at => '06.12 2011', :name => 'kjetil-birkeland-moe', :full_name => 'Kjetil Birkeland Moe', :title => 'Utvikler, designer og pianist'}]
 end
