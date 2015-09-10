@@ -1,1 +1,1 @@
-web: bundle exec scripts/server
+web: bundle exec ruby mineverktoy.rb -p $PORT
