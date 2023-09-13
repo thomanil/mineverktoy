@@ -5,17 +5,14 @@
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: #00B515;
+	--accent-dark: #00610B;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+	--gray-dark: #525252;
 }
-@font-face {
+/*@font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-regular.woff') format('woff');
 	font-weight: 400;
@@ -28,20 +25,28 @@
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
-}
+}*/
 body {
-	font-family: 'Atkinson', sans-serif;
+	/*font-family: 'Atkinson', sans-serif;*/
+	font-family: Arial, "MS Trebuchet", sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
 }
+
+a:visited, #logo-first-part {
+	color: var(--accent);
+}
+
+#logo-first-part {
+	font-family: 'Pacifico', cursive;
+}
+
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
@@ -55,7 +60,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: var(--gray-dark);
 	line-height: 1.2;
 }
 h1 {

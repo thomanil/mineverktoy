@@ -29,13 +29,24 @@ h1, h2, h3, hr, footer, .slogan, .interview-pubdate, .interview-question, .photo
 	color: #525252;
 }
 
+
+a {
+	color: #00610B;
+}
+
+a:visited, #logo-first-part {
+	color: #00B515;
+}
+
+#logo-first-part {
+	font-family: 'Pacifico', cursive;
+}
+
 header {
 	margin-bottom: 30px;
 }
 
-#logo-first-part {
-    font-family: 'Pacifico', cursive;
-}
+
 
 #logo-second-part {
     
@@ -84,13 +95,6 @@ footer {
 	font-size: 0.8em;
 }
 
-a {
-	color: #00610B;
-}
-
-a:visited, #logo-first-part {
-	color: #00B515;
-}
 
 a:hover {
 	text-decoration: none;
