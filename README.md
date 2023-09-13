@@ -22,7 +22,7 @@ Install nvm, node 18+
 `npm run dev` to launch site locally
 
 
-
+_The rest of the README is the default Astro README_
 
 # Astro Starter Kit: Blog
 
