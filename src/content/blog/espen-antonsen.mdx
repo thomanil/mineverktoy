@@ -1,8 +1,21 @@
+---
+title: 'Espen Antonsen'
+description: 'Utvikler'
+pubDate: 'May 09 2011'
+heroImage: '/images/espen-antonsen/portrait.jpg'
+---
 
-<%= interview_header @name, "" %>
+import Question1 from '../../components/Question1.astro';
+
+import Question2 from '../../components/Question2.astro';
+
+import Question3 from '../../components/Question3.astro';
+
+import Question4 from '../../components/Question4.astro';
 
 
-<%= q1_who_are_you? %>
+<Question1/>
+
 
 <p>
 Jeg utvikler og markedsfører <a href="http://makeplans.no">MakePlans.no</a> som er en web-applikasjon for timebestilling og utleie. 
@@ -36,7 +49,8 @@ som takk og slik at utviklingen av disse prosjektene kan videreføres.
 Mer info om meg finnes på <a href="http://twitter.com/EspenAntonsen">Twitter</a>, <a href="http://github.com/espen">Github</a> og på <a href="http://inspired.no">nettsiden min</a>.
 </p>
 
-<%= q2_what_hardware? %>
+<Question2/>
+
 <p>
 I Oslo delte jeg kontor med mine venner i <a href="http://nordaaker.no">Nordaaker</a> og hadde der en dugelig kontorstol samt en BenQ 24" 
 skjerm (som selvfølgelig ble kritisert for kvalitet på fargegjengivelsen av <a href="http://twitter.com/arne">noen</a>). 
@@ -62,7 +76,8 @@ Bruker min iPhone 3GS flittig og har også en iPad. Sistnevnte brukes ikke så a
 bedre opplevelse til å lese RSS, lengre artikler (<a href="http://instapaper.com/">Instapaper</a>), nyheter og tweets enn på en vanlig datamaskin.
 </p>
 
-<%= q3_what_software? %>
+<Question3/>
+
 <p>
 Mesteparten av tiden sitter jeg å koder i <a href="http://macromates.com/">Textmate</a>. Ved hver ny bug-fix eller feature som jeg utvikler så bytter jeg til Terminal og 
 bruker <a href="http://git-scm.com/">git</a> til å holde kontroll på versjonsendringer som så ofte ender opp på <a href="https://github.com/">GitHub</a> (og iblant på <a href="http://gitorious.org/">Gitorious</a>). 
@@ -95,7 +110,8 @@ Foreløpig har jeg kun brukt <a href="http://mailchimp">MailChimp</a> i et par p
 Har planer om å integrere MailChimp i MakePlans.
 </p>
 
-<%= q4_dream_setup? %>
+
+<Question4/>
 
 <p>
 En laptop som er raskere, tar mindre plass, har lengere batteritid og er lettere er alt jeg ber om :) 
