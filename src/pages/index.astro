@@ -100,7 +100,7 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li>
 								<a href={`/mineverktoy/${post.slug}/`}>
-									<img width={720} height={360} src={"/mineverktoy"+post.data.heroImage} alt="" />
+									<img width={720} height={360} src={post.data.heroImage} alt="" />
 									<h4 class="title">{post.data.title}</h4>
 									<p class="description">{post.data.description}</p>
 									<p class="date">
