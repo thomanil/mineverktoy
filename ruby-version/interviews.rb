@@ -20,13 +20,11 @@ def interviews_config
    {:published? => true, :published_timestamp => 1315196668, :published_at => '05.09.2011', :name => 'mia-holte', :full_name => 'Mia Holte', :title => 'Frilans webdesigner'},
    {:published? => true, :published_timestamp => 1315801609, :published_at => '12.09 2011', :name => 'morten-tollefsen', :full_name => 'Morten Tollefsen', :title => 'Forskningsleder i MediaLT'},
    {:published? => true, :published_timestamp => 1316452191, :published_at => '19.09.2011', :name => 'odin-hole-standal', :full_name => 'Odin Hole Standal', :title => 'Konsulent hos Webstep'},
-   {:published? => true, :published_timestamp => 1317661397, :published_at => '03.10 2011', :name => 'magnar-sveen', :full_name => 'Magnar Sveen', :title => 'Glad framsieutvikler hos Kodemaker'},
    {:published? => true, :published_timestamp => 1318228398, :published_at => '10.10.2011', :name => 'paul-chaffey', :full_name => 'Paul Chaffey', :title => 'Adm. dir. i Abelia'},
 
 
    {:published? => true, :published_timestamp => 1320080337, :published_at => '31.10 2011', :name => 'rikke-fjeld-jansen', :full_name => 'Rikke Fjeld Jansen', :title => 'Webdesigner og illustratør'},
    {:published? => true, :published_timestamp => 1320690180, :published_at => '07.11 2011', :name => 'ole-christian-storesund', :full_name => 'Ole Christian Storesund', :title => 'Grafisk designer'},
-   {:published? => true, :published_timestamp => 1321271287, :published_at => '14.11 2011', :name => 'mats-lindh', :full_name => 'Mats Lindh', :title => 'Utvikler, innvikler og hacker'},
    {:published? => true, :published_timestamp => 1322477426, :published_at => '28.11 2011', :name => 'rune-spaans', :full_name => 'Rune Spaans', :title => 'Uavhengig illustratør og regissør'},
    {:published? => true, :published_timestamp => 1323117735, :published_at => '05.12 2011', :name => 'ram-yoga', :full_name => 'Ram Yoga', :title => 'Interaksjonsdesigner og brukervennlighetsrådgiver'},
    {:published? => true, :published_timestamp => 1323802773, :published_at => '13.12 2011', :name => 'sondre-bjellas', :full_name => 'Sondre Bjellås', :title => 'Senior løsningsarkitekt hos Deepmind AS'},
