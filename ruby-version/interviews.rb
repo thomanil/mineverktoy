@@ -26,7 +26,6 @@ def interviews_config
    {:published? => true, :published_timestamp => 1317661397, :published_at => '03.10 2011', :name => 'magnar-sveen', :full_name => 'Magnar Sveen', :title => 'Glad framsieutvikler hos Kodemaker'},
    {:published? => true, :published_timestamp => 1318228398, :published_at => '10.10.2011', :name => 'paul-chaffey', :full_name => 'Paul Chaffey', :title => 'Adm. dir. i Abelia'},
 
-   {:published? => true, :published_timestamp => 1319547717, :published_at => '25.10.2011', :name => 'joachim-froholt', :full_name => 'Joachim Froholt', :title => 'Skribent hos Gamer.no'},
 
    {:published? => true, :published_timestamp => 1320080337, :published_at => '31.10 2011', :name => 'rikke-fjeld-jansen', :full_name => 'Rikke Fjeld Jansen', :title => 'Webdesigner og illustratør'},
    {:published? => true, :published_timestamp => 1320690180, :published_at => '07.11 2011', :name => 'ole-christian-storesund', :full_name => 'Ole Christian Storesund', :title => 'Grafisk designer'},
