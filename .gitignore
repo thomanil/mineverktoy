@@ -2,3 +2,4 @@
 /node_modules/.bin/acorn
 /node_modules/
 /dist/
+/.astro/types.d.ts
