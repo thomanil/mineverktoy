@@ -65,8 +65,8 @@ const posts = (await getCollection('blog')).sort(
 			ul li a:hover .date {
 				color: rgb(var(--accent));
 			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
+			ul li a:hover img {
+				filter: brightness(0.8);
 			}
 			@media (max-width: 720px) {
 				ul {
