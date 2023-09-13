@@ -22,6 +22,5 @@ def interviews_config
 
    {:published? => true, :published_timestamp => 1320080337, :published_at => '31.10 2011', :name => 'rikke-fjeld-jansen', :full_name => 'Rikke Fjeld Jansen', :title => 'Webdesigner og illustratør'},
    {:published? => true, :published_timestamp => 1322477426, :published_at => '28.11 2011', :name => 'rune-spaans', :full_name => 'Rune Spaans', :title => 'Uavhengig illustratør og regissør'},
-   {:published? => true, :published_timestamp => 1323117735, :published_at => '05.12 2011', :name => 'ram-yoga', :full_name => 'Ram Yoga', :title => 'Interaksjonsdesigner og brukervennlighetsrådgiver'},
    {:published? => true, :published_timestamp => 1323802773, :published_at => '13.12 2011', :name => 'sondre-bjellas', :full_name => 'Sondre Bjellås', :title => 'Senior løsningsarkitekt hos Deepmind AS'},
 end
