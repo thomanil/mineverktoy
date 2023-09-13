@@ -1,6 +1,20 @@
-<%= interview_header @name, "" %>
+---
+title: 'Torbjørn Marø'
+description: 'Senior utvikler og teamleder hos PSWinCom'
+pubDate: 'May 30 2011'
+heroImage: '/images/torbjorn-maro/portrait.jpg'
+---
 
-<%= q1_who_are_you? %>
+import Question1 from '../../components/Question1.astro';
+
+import Question2 from '../../components/Question2.astro';
+
+import Question3 from '../../components/Question3.astro';
+
+import Question4 from '../../components/Question4.astro';
+
+
+<Question1/>
 
 <p>Jeg er en allsidig softwareutvikler som er lidenskapelig opptatt av faget sitt. Jeg bruker mye tid på å holde meg oppdatert, på å lære både gamle og nye ting som kan gjøre meg til en bedre utvikler. Jeg er spesielt opptatt av kodekvalitet, smidige utviklingsmetoder og programmeringsspråk.</p>
 
@@ -9,7 +23,7 @@
 <p>Programmeringsbloggen finner du på <a href="http://blog.kjempekjekt.com.">blog.kjempekjekt.com.</a> </p>
 
 
-<%= q2_what_hardware? %>
+<Question2/>
 
 <p>Jeg har en snart to år gammel 15,4 tommers <a href="http://www.notebookcheck.net/Review-Dell-Precision-M4400-Notebook.11959.0.html">Dell Precisio M4400</a> laptop (2.80 Intel Core2 Duo, 8 GB RAM, 250 GB harddisk). Operativsystemet er <a href="http://windows.microsoft.com/nb-NO/windows7/products/compare?T1=tab09">Windows 7 Ultimate</a>. 64 bits OS og 8 GB minne er herlig, og det er lenge siden jeg sist bekymret meg for høyt minnebruk.</p>
 
@@ -17,7 +31,9 @@
 
 <p>Telefonen er en <a href="http://www.htc.com/no/product/magic/overview.html">HTC Magic</a>. Det er den aller første <a href="http://www.android.com/">Android</a>-telefonen fra HTC, så det er kanskje på tide at jeg oppgraderer. Men jeg kommer i alle fall til å holde meg til Android, som er en flott plattform.</p>
 
-<%= q3_what_software? %>
+
+
+<Question3/>
 
 <p>Jeg bruker mye tid på nettet, og forsøker å velge online programmer fremfor ting som må installeres - for eksempel bruker jeg <a href="http://gmail.com">Gmail</a>, for det meste av dokumenter klarer jeg meg med <a href="https://docs.google.com/">Google Docs</a>, og jeg bruker <a href="http://agilezen.com/">AgileZen</a> for prosjektstyring. </p>
 
@@ -51,7 +67,9 @@
 
 <p>Et siste verktøy som er ganske kjekt å ha er <a href="http://www.virtualbox.org">VirtualBox</a> (tidligere Sun, nå Oracle). Det lar meg spinne opp ulike virtuelle maskiner med valgfritt OS. Jeg har en virtuell <a href="http://www.ubuntu.no/">Ubuntu</a>-installasjon jeg bruker endel når jeg trenger et Linux-miljø. VirtualBox kan kjøres i sømløs modus, hvor Linux-vinduene og Windows-vinduene lever side om side.., det er ganske genialt.</p>
 
-<%= q4_dream_setup? %>
+
+
+<Question4/>
 
 <p>Jeg skulle ønske jeg kunne migrere til Linux på heltid. Linux er liksom skreddersydd for måten jeg liker å jobbe på. Men jeg har alltid vært en Microsoft-utvikler, og ser det ikke som sansynlig at jeg vil kunne endre det med det første. </p>
 
