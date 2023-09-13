@@ -21,6 +21,10 @@ Install nvm, node 18+
 
 `npm run dev` to launch site locally
 
+# Deploying it
+
+Push to master, Github Actions will deploy the site to Github Pages (see `astro.yml`)
+
 
 _The rest of the README is the default Astro README_
 
