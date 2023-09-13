@@ -7,7 +7,6 @@ end
 def interviews_config
   [
    {:published? => true, :published_timestamp => 1303715766, :published_at => '25.04.2011', :name => 'ole-morten-amundsen', :full_name => 'Ole Morten Amundsen', :title => 'Entreprenør og programmerer'},
-   {:published? => true, :published_timestamp => 1304311858, :published_at => '02.05.2011', :name => 'johannes-brodwall', :full_name => 'Johannes Brodwall', :title => 'Chief Scientist hos Steria'},
 
 
    {:published? => true, :published_timestamp => 1305529393, :published_at => '16.05.2011', :name => 'thomas-flemming', :full_name => 'Thomas Flemming', :title => 'Programmerer'},
@@ -22,7 +21,6 @@ def interviews_config
    {:published? => true, :published_timestamp => 1315196668, :published_at => '05.09.2011', :name => 'mia-holte', :full_name => 'Mia Holte', :title => 'Frilans webdesigner'},
    {:published? => true, :published_timestamp => 1315801609, :published_at => '12.09 2011', :name => 'morten-tollefsen', :full_name => 'Morten Tollefsen', :title => 'Forskningsleder i MediaLT'},
    {:published? => true, :published_timestamp => 1316452191, :published_at => '19.09.2011', :name => 'odin-hole-standal', :full_name => 'Odin Hole Standal', :title => 'Konsulent hos Webstep'},
-   {:published? => true, :published_timestamp => 1317057945, :published_at => '26.09.2011', :name => 'jon-bing', :full_name => 'Jon Bing', :title => 'Professor hos det juridiske fakultet ved UiO'},
    {:published? => true, :published_timestamp => 1317661397, :published_at => '03.10 2011', :name => 'magnar-sveen', :full_name => 'Magnar Sveen', :title => 'Glad framsieutvikler hos Kodemaker'},
    {:published? => true, :published_timestamp => 1318228398, :published_at => '10.10.2011', :name => 'paul-chaffey', :full_name => 'Paul Chaffey', :title => 'Adm. dir. i Abelia'},
 
