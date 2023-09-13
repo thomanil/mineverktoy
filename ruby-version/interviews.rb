@@ -19,7 +19,6 @@ def interviews_config
 
    {:published? => true, :published_timestamp => 1311073275, :published_at => '08.08.2011', :name => 'sarah-brodwall', :full_name => 'Sarah Brodwall', :title => 'Webdesigner'},
    {:published? => true, :published_timestamp => 1313382367, :published_at => '15.08.2011', :name => 'rolf-rander-ness', :full_name => 'Rolf Rander Næss', :title => 'Rådgiver hos Acando'},
-   {:published? => true, :published_timestamp => 1313987104, :published_at => '22.08.2011', :name => 'espen-andersen', :full_name => 'Espen Andersen', :title => 'Foreleser, forsker og skribent'},
    {:published? => true, :published_timestamp => 1314591941, :published_at => '29.07.2011', :name => 'karianne-berg', :full_name => 'Karianne Berg', :title => 'Utvikler og konsulent hos Miles'},
    {:published? => true, :published_timestamp => 1315196668, :published_at => '05.09.2011', :name => 'mia-holte', :full_name => 'Mia Holte', :title => 'Frilans webdesigner'},
    {:published? => true, :published_timestamp => 1315801609, :published_at => '12.09 2011', :name => 'morten-tollefsen', :full_name => 'Morten Tollefsen', :title => 'Forskningsleder i MediaLT'},
