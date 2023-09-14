@@ -124,6 +124,11 @@ hr {
 	main {
 		padding: 1em;
 	}
+
+	/*Otherwise we get a right gutter in the html element for some reason*/
+	html, body {
+		overflow-x: hidden;
+	}
 }
 
 .sr-only {
