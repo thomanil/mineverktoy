@@ -17,7 +17,6 @@ import HeaderLink from './HeaderLink.astro';
 <style>
 	header {
 		margin: 0;
-		padding: 0 1em;
 		background: white;
 	}
 	h2 {
@@ -34,7 +33,7 @@ import HeaderLink from './HeaderLink.astro';
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		max-width: 90%;
+		margin-right: 5em;
 	}
 	nav a {
 		padding: 1em 0.5em;
@@ -50,6 +49,8 @@ import HeaderLink from './HeaderLink.astro';
 	@media (max-width: 720px) {
 		nav {
 			flex-direction: column;
+			max-width: 100%;
+			width: 100%;
 		}
 
 		#logoHeader {
