@@ -4,7 +4,7 @@ import HeaderLink from './HeaderLink.astro';
 
 <header>
 	<nav>
-		<h1><a href="/"><span id="logo-first-part">mine</span>Verktøy</a></h1>
+		<h1 id="logoHeader"><a href="/"><span id="logo-first-part">mine</span>Verktøy</a></h1>
 
 
 		<div class="internal-links">
@@ -50,6 +50,10 @@ import HeaderLink from './HeaderLink.astro';
 	@media (max-width: 720px) {
 		nav {
 			flex-direction: column;
+		}
+
+		#logoHeader {
+			margin: auto;
 		}
 	}
 </style>
