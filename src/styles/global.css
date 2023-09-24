@@ -45,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5rem 0;
+	margin: 1em 0 0.5rem 0;
 	color: var(--gray-dark);
 	line-height: 1.2;
 }
