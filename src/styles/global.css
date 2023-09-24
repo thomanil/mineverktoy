@@ -75,11 +75,11 @@ a:hover {
 	color: var(--accent);
 }
 p {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
-.prose p {
+/*.prose p {
 	margin-bottom: 2em;
-}
+}*/
 textarea {
 	width: 100%;
 	font-size: 16px;
@@ -95,6 +95,10 @@ img {
 	height: auto;
 	border-radius: 8px;
 }
+ul {
+	margin: 0;
+}
+
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
