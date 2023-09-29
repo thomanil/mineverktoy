@@ -7,7 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, draft } = Astro.props;
 ---
 
 <html lang="en">
@@ -43,6 +43,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.title h1 {
 				margin: 0 0 0.5em 0;
 			}
+			.draft-label {
+				color: #ff0000;
+			}
 			.date {
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
@@ -74,6 +77,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						</div>
 						<h1>{title}</h1>
 						<p>{description}</p>
+
+						{draft &&(
+							<p class="draft-label">UTKAST, IKKE PUBLISERT ENNÅ, HEMMELIG 😊</p>
+						)}
+
 						<hr />
 					</div>
 					<slot />
