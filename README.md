@@ -13,7 +13,7 @@ Basically the Norwegian version of
 
 # Running it locally
 
-The rig needs node 18 or higher when I write this. [nvm](https://github.com/nvm-sh/nvm) is a good way to install different node versions.
+The rig needs node v18 or higher when I write this. [nvm](https://github.com/nvm-sh/nvm) is a good way to install different node versions.
 
 `npm install `
 
