@@ -11,15 +11,17 @@ Basically the Norwegian version of
 
 [Creative Commons Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0/)
 
-
-
 # Running it locally
 
-Install nvm, node 18+
+The rig needs node 18 or higher when I write this. [nvm](https://github.com/nvm-sh/nvm) is a good way to install different node versions.
 
 `npm install `
 
 `npm run dev` to launch site locally
+
+# Editing interviews
+
+The interview content is found under `src/content/blog/`
 
 # Deploying it
 
@@ -74,4 +76,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
