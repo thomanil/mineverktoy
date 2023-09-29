@@ -17,7 +17,7 @@ The rig needs node 18 or higher when I write this. [nvm](https://github.com/nvm-
 
 `npm install `
 
-`npm run dev` to launch site locally
+`npm run dev` to launch site locally at localhost:4321: web pages will auto-reload if you save any changes while you have that running.
 
 # Editing interviews
 
