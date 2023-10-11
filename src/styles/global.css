@@ -25,6 +25,10 @@ body {
 	line-height: 1.7;
 }
 
+figcaption {
+	font-size: 0.7em;
+}
+
 a:visited, #logo-first-part {
 	color: var(--accent);
 }
