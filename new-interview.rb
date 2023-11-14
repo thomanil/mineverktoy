@@ -27,5 +27,5 @@ File.open(mdxPath, "w") { |file| file.puts updatedText }
 puts "\nGenerated interview mdx file: #{mdxPath}"
 puts "\nGenerated img directory: #{imageDirPath}"
 
-# TODO Open interview in firefox/default browser
-# puts "localhost:4321/#{path}"
+puts "\nUrl:"
+puts "http://localhost:4321/#{path}"
