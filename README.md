@@ -15,9 +15,12 @@ Basically the Norwegian version of
 
 The rig needs node v18 or higher when I write this. [nvm](https://github.com/nvm-sh/nvm) is a good way to install different node versions.
 
-`npm install `
+`npm install ` to install dependencies
 
 `npm run dev` to launch site locally at localhost:4321: web pages will auto-reload if you save any changes while you have that running.
+
+`./new-interview.rb` from root dir to generate scaffolding for each new interview
+
 
 # Editing interviews
 
