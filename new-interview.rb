@@ -13,17 +13,19 @@ title = gets.chomp
 puts "Hva skal være path ('fornavn-etternavn') til intervju, bilder etc?"
 path = gets.chomp
 
-
 imageDirPath = "./public/images/#{path}"
 mdxPath = "./src/content/blog/#{path}.mdx"
 
-# TODO Create image folder
-# TODO Copy template mdx file, with substitions
-
 mkdir_p imageDirPath
-mkdir_p mdxPath
+cp "./src/content/blog/_template.mdx", mdxPath
+
+
+interviewText = File.read(mdxPath)
+updatedText = interviewText.gsub(/@TITLE/, title).gsub(/@NAME/, name).gsub(/@PATH/, path)
+File.open(mdxPath, "w") { |file| file.puts updatedText }
 
 puts "\nGenerated interview mdx file: #{mdxPath}"
 puts "\nGenerated img directory: #{imageDirPath}"
 
-
+# TODO Open interview in firefox/default browser
+# puts "localhost:4321/#{path}"
