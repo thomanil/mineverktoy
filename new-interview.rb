@@ -19,6 +19,8 @@ mdxPath = "./src/content/blog/#{path}.mdx"
 mkdir_p imageDirPath
 cp "./src/content/blog/_template.mdx", mdxPath
 
+
+
 interviewText = File.read(mdxPath)
 updatedText = interviewText.gsub(/@TITLE/, title).gsub(/@NAME/, name).gsub(/@PATH/, path)
 File.open(mdxPath, "w") { |file| file.puts updatedText }
