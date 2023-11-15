@@ -1,0 +1,1 @@
+ grep -r 'draft: true' | grep mdx | grep -v template
