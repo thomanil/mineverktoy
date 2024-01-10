@@ -9,7 +9,7 @@ Basically the Norwegian version of
 
 ## LICENSE:
 
-[Creative Commons Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0/)
+[Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/ )
 
 # Running it locally
 
