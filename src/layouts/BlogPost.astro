@@ -19,16 +19,12 @@ const { title, description, pubDate, updatedDate, heroImage, draft } = Astro.pro
 				max-width: 100%;
 				margin: 0;
 			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
+			.hero-image, img {
+				width: 720px;
+				max-width: calc(100% - 2em);
 				display: block;
 				margin: 0 auto;
 				border-radius: 12px;
-			}
-			img {
-				max-width: 720px;
 			}
 			.prose {
 				width: 720px;

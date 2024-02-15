@@ -133,6 +133,12 @@ hr {
 		padding: 1em;
 	}
 
+	@media (max-width: 720px) {
+		img {
+			max-width: 100%;
+		}
+	}
+
 	/*Otherwise we get a right gutter in the html element for some reason*/
 	html, body {
 		overflow-x: hidden;
