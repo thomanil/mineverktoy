@@ -99,7 +99,7 @@ const posts = (await getCollection('blog')).sort(
 					{
 						posts.filter((post)=> !post.data.draft).map((post) => (
 							<li>
-								<a href={`/${post.slug}/#portrait`}>
+								<a href={`/${post.slug}`}>
 									<img width={720} height={360} src={post.data.heroImage} alt="" />
 									<h4 class="title">{post.data.title}</h4>
 									<p class="description">{post.data.description}</p>
